@@ -1,11 +1,15 @@
-# curiousapple
+# curiousapple 🦇
+# curiousapple 🦇
 
+---------------------------
 **Bridges, Dexes, Perps, Vaults, Lending Markets, Stablecoins, LSDs,** </br>
-**NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts**</br>
+**NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts....**</br>
+Have audited all !!! :globe_with_meridians: </br>
 
-Have audited all !!! </br>
+---------------------------------------------------
+
 If your protocol does not belong there, bring it on ! will take it as challenge :) </br>
-Ping me at `curiousapple` on telegram or discord to take it forward </br>
+Ping me at `curiousapple` on telegram or discord to take it forward 📨 </br>
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
@@ -39,7 +43,7 @@ Apprentice (2 months) > Associate (6 months)> Lead (3 months)
     Currently serving as their inhouse security expert
 
 
-### Private Audits
+## Private Audits
 
 | Client               | Report     | Duration  |
 |-------------         |--------    |---------- |
