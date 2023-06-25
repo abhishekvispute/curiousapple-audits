@@ -1,20 +1,19 @@
 # curiousapple 🦇
-# curiousapple 🦇
 
 ---------------------------
 **Bridges, Dexes, Perps, Vaults, Lending Markets, Stablecoins, LSDs,** </br>
 **NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts....**</br>
-Have audited all !!! :globe_with_meridians: </br>
+Have audited all !!! :earth_asia: :earth_africa: :earth_americas: </br>
 
 ---------------------------------------------------
 
 If your protocol does not belong there, bring it on ! will take it as challenge :) </br>
-Ping me at `curiousapple` on telegram or discord to take it forward 📨 </br>
+Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br>
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
 **Total Audit Weeks:** `38.5`  
-Apprentice (2 months) > Associate (6 months)> Lead (3 months)
+Apprentice (2 mo) :crescent_moon: > Associate (6 mo) :last_quarter_moon: > Lead (3 mo) :full_moon:
 
 | Client      | Report                                                                                       | Position            | Duration |
 |-------------|----------------------------------------------------------------------------------------------|---------------------|----------|
@@ -36,21 +35,21 @@ Apprentice (2 months) > Associate (6 months)> Lead (3 months)
 | Frax TWAMM  | Private                                                                                      | Apprentice          | 2 weeks  |
 | Wristables  | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Wristables.pdf)  | Apprentice          | 1 week   |
 
-##  Public Audit Contests (Big Wins)
+##  Public Audit Contests (Big Wins) :medal_military:
 
 1. **First** Position for [Raft Finance (1H, 1M, 3L, 1G)](https://github.com/raft-fi/contracts/issues?q=is%3Aissue+is%3Aclosed+author%3Aabhishekvispute)
 2. **Third** Position for [Socket Messaging Bridge (1H, 1M, 1L)](https://sockettech.notion.site/WarRoom-Leaderboard-47a977c54ff74fd48eac780a9d518c70)
     Currently serving as their inhouse security expert
 
 
-## Private Audits
+## Private Audits :seedling:
 
 | Client               | Report     | Duration  |
 |-------------         |--------    |---------- |
 | WeFi Finance         | TBA        | 1 week    |
 | Raft Update          | TBA        | 0.5 week  |
 
-## Bug Bounties 
+## Bug Bounties :santa:
 
 1. Will reveal soon (High)
    
