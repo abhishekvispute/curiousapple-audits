@@ -12,7 +12,7 @@ Ping me at `curiousapple` on telegram or discord to take it forward :airplane: <
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
-**Total Audit Weeks:** `38.5`  
+**Total Audit Weeks:** `40`  
 Apprentice (2 mo) > Associate (6 mo) > Lead (3 mo) 
 
 | Client      | Report                                                                                       | Position            | Duration |
