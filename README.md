@@ -56,4 +56,8 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 2. [Spiral DAO (Medium)](https://spiral.farm/) </br>
 Anyone could grief staking rewards contract by donating a small amount of reward tokens to the vault, since the reward calculation included `xyz - rewardToken.balanceOf(address(this))`.
 
-1. Will reveal soon (Medium)
+3. Will reveal soon (Medium)
+
+## Credits 
+1. [Macro](https://github.com/zobront/audits/blob/main/template.md) library for public audit reports. 
+2. [zobront](https://github.com/zobront/audits/blob/main/template.md) for audit report template.
