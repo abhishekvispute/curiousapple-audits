@@ -47,7 +47,7 @@ Apprentice (2 mo) :crescent_moon: > Associate (6 mo) :last_quarter_moon: > Lead 
 | Client               | Report     | Duration  |
 |-------------         |--------    |---------- |
 | WeFi Finance         | TBA        | 1 week    |
-| Raft Update          | TBA        | 0.5 week  |
+| Raft Update          | https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Raft-Update.md        | 0.5 week  |
 
 ## Bug Bounties :santa:
 
