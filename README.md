@@ -1,19 +1,19 @@
 # curiousapple 🦇
 
 ---------------------------
-**Bridges, Dexes, Perps, Vaults, Lending Markets, Stablecoins, LSDs,** </br>
+**Bridges, DEXs, Perps, Vaults, Lending Markets, Stablecoins, LSDs,** </br>
 **NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts....**</br>
-Have audited all !!! :earth_asia: :earth_africa: :earth_americas: </br>
+Have audited all !!! &nbsp; :earth_asia: :earth_africa: :earth_americas: </br>
 
 ---------------------------------------------------
 
-If your protocol does not belong there, bring it on ! will take it as challenge :) </br>
+If your protocol does not belong there, bring it on ! will take it as challenge :smile: </br>
 Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br>
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
-**Total Audit Weeks:** `38.5`  
-Apprentice (2 mo) :crescent_moon: > Associate (6 mo) :last_quarter_moon: > Lead (3 mo) :full_moon:
+**Total Audit Weeks:** `40`  
+Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo) 
 
 | Client      | Report                                                                                       | Position            | Duration |
 |-------------|----------------------------------------------------------------------------------------------|---------------------|----------|
@@ -38,8 +38,8 @@ Apprentice (2 mo) :crescent_moon: > Associate (6 mo) :last_quarter_moon: > Lead 
 ##  Public Audit Contests (Big Wins) :medal_military:
 
 1. **First** Position for [Raft Finance (1H, 1M, 3L, 1G)](https://github.com/raft-fi/contracts/issues?q=is%3Aissue+is%3Aclosed+author%3Aabhishekvispute)
-2. **Third** Position for [Socket Messaging Bridge (1H, 1M, 1L)](https://sockettech.notion.site/WarRoom-Leaderboard-47a977c54ff74fd48eac780a9d518c70)
-    Currently serving as their inhouse security expert
+2. **Third** Position for [Socket Messaging Bridge (1H, 1M, 1L)](https://sockettech.notion.site/WarRoom-Leaderboard-47a977c54ff74fd48eac780a9d518c70) </br>
+    Currently serving as their in-house security expert
 
 
 ## Private Audits :seedling:
@@ -53,8 +53,7 @@ Apprentice (2 mo) :crescent_moon: > Associate (6 mo) :last_quarter_moon: > Lead 
 
 1. Will reveal soon (High)
    
-2. [Spiral DAO (Medium)](https://spiral.farm/)
-Anyone could grief staking rewards by donating small amount of reward tokens to the vault, 
-since the reward calculation included `xyz - rewardToken.balanceOf(address(this))`. (Even 1 wei of overflow was sufficient)
+2. [Spiral DAO (Medium)](https://spiral.farm/) </br>
+Anyone could grief staking rewards contract by donating a small amount of reward tokens to the vault, since the reward calculation included `xyz - rewardToken.balanceOf(address(this))`.
 
 1. Will reveal soon (Medium)
