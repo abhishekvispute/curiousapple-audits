@@ -4,6 +4,7 @@
         <td><img src="./logos/raft.png" width="410" height="250" /></td>
         <td> 
             <h1>Raft Finance</h1>
+            <h3>Updates to v1.0</h3>
             <p>Prepared by: curiousapple, Independent Security Researcher</p>
             <p>Date: Mar 22 to March 23, 2023</p>
         </td>
