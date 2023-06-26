@@ -58,10 +58,10 @@ TBA
 
 # Disclaimer 
 
-This review is a code review to identify potential vulnerabilities in the code.</br>
-The reviewer (`curiousapple`) did not investigate security practices or operational security and assumed that privileged accounts could be trusted.</br> 
-The reviewer (`curiousapple`) did not evaluate the security of the code relative to a standard or specification.</br> 
-The review may not have identified all potential attack vectors or areas of vulnerability.</br>
-`curiousapple` makes no warranties regarding the security of the code and do not warrant that the code is free from defects.</br> 
-`curiousapple` does not represent nor imply to third parties that the code has been audited nor that the code is free from defects.</br> 
-By deploying or using the code, `TBA` and users of the contracts agree to use the code at their own risk.</br>
+curiousapple's review is limited to identifying potential vulnerabilities in the code. It does not investigate security practices, operational security, or evaluate the code relative to a standard or specification.</br> 
+curiousapple makes no warranties, either express or implied, regarding the code's merchantability, fitness for a particular purpose, or that it's free from defects.</br>
+curiousapple will not be liable for any lost profits, business, contracts, revenue, goodwill, production, anticipated savings, loss of data, procurement costs of substitute goods or services, or any claim by any other party.</br> 
+curiousapple will not be liable for any consequential, incidental, special, indirect, or exemplary damages, even if it has been advised of the possibility of such damages.</br>
+This review does not constitute investment advice, is not an endorsement, and is not a guarantee as to the absolute security of the project.</br> 
+By deploying or using the code, users agree to use the code at their own risk.</br>
+curiousapple is not responsible for the content or operation of any third-party websites or software linked or referenced in the review, and shall have no liability for the use of such.</br>
