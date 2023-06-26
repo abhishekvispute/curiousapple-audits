@@ -17,11 +17,12 @@ In their own words, "Raft is a governance-minimized, decentralized protocol that
 Initially, this capital-efficient collateral was only `wstETH`. Then, Raft Team was looking to accept other tokens such as `rETH` and `WETH` as collateral, but they wanted to implement a cap on the total supply and maximum balance of the position. </br>
 The currently deployed contracts don't allow for this to be achieved, as they lack any consideration for supply and maximum balance per collateral token. Consequently, without altering the already deployed contracts, they developed a wrapped collateral token contract. This essentially acts as a wrapper around the underlying assets, enforcing limits on deposits. </br>
 In addition, new oracles were integrated to support the recent inclusions, and the existing ones were refactored. </br>
-This update also saw the liquidation protocol fee reduced to zero. This audit encompasses the security review for these updates.</br>
+This update also saw the liquidation protocol fee reduced to zero. This audit includes the security review for these updates.</br>
 
 ### **curiousapple** 🦇
 
-Abhishek Vispute, known online as 'curiousapple', is an independent smart contract security researcher.  Previously, he served as a lead smart contract auditor at [Macro](https://0xmacro.com/) and is currently working independently.</br>
+Abhishek Vispute, known online as 'curiousapple', is an independent smart contract security researcher.</br>  
+Previously, he served as a lead smart contract auditor at [Macro](https://0xmacro.com/) and is currently working independently.</br>
 His auditing experience covers diverse set of protocols, including DeFi, NFTs, DAOs, and Games, in all of which he has discovered severe bugs. </br>
 You can find his previous work and contact [here](https://github.com/abhishekvispute/curiousapple-audits/blob/231caa00d7f0ba8b016b4980b300e6a2fcd93815/README.md) </br>
 
@@ -52,13 +53,12 @@ After completion of the fixes, the `TBA` commit was reviewed.
 # Summary of Findings
 
 | ID     | Title                        | Severity      | Fixed |
-| ------ | ---------------------------- | ------------- | ----- |
-| H-01 | `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | High |  ✓ |
-| Q-01 | SafeERC20 extension is not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  | Quality |    |
-| Q-02 | Check Effects Interaction Pattern not followed for `managePositionETH()` | Quality |    |
-| Q-03 | Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH
-` | Quality |    |
-| G-01 | Redundant check on `collateralToRedeem` | GAS |    |
+| ----------- | ---------------------------- | ------------- | ----- |
+| H-01 &nbsp;| `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | High |  ✓ |
+| Q-01 &nbsp;| SafeERC20 extension is not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  | Quality |    |
+| Q-02 &nbsp;| Check Effects Interaction Pattern not followed for `managePositionETH()` | Quality |    |
+| Q-03 &nbsp;| Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH | Quality |    |
+| G-01 &nbsp;| Redundant check on `collateralToRedeem` | Gas |    |
 
 # Detailed Findings
 
@@ -94,12 +94,12 @@ Consider skipping max balance check for all transfers from position manager.
 ### Review
 TBA
 
-## [Q-01] SafeERC20 extension is not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken` 
+## [Q-01] `SafeERC20` extension is not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken` 
 [_underlyingCollateralToken.transferFrom(msg.sender, address(this), collateralChange);](https://github.com/raft-fi/contracts/blob/d5ca8febd9b7f33e1a3ad1eff1f2ae1d9dcd5b5f/contracts/PositionManagerWrappedCollateralToken.sol#L67-L68)
 [_underlyingCollateralToken.approve(address(wrappedCollateralToken), type(uint256).max);](https://github.com/raft-fi/contracts/blob/d5ca8febd9b7f33e1a3ad1eff1f2ae1d9dcd5b5f/contracts/PositionManagerWrappedCollateralToken.sol#L40-L41)
 
 ### Recommendation
-If you are planning to use tokens who return boolean instead of reverting as underlying moving ahead, consider using SafeERC20 extension.
+If you are planning to use tokens who return `boolean` instead of reverting as underlying moving ahead, consider using `SafeERC20` extension.
 
 ### Review
 TBA
@@ -131,7 +131,7 @@ L65
 There is no incentive to renter here, since this contract is not designed to hold any funds, however it's still recommended to follow check effect interaction pattern.
 
 ### Recommendation
-Consider doing `rToken` transfer before collateral `ETH` transfer 
+Consider doing `rToken` transfer before `ETH` transfer. 
 
 ### Review
 TBA
@@ -140,7 +140,7 @@ TBA
 ## [Q-03] Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH
 
 All of Raft's manage position methods on its position manager wrappers have a feature where a user can pass `debtChange` as the `uint256` maximum, after which the total debt of the user is considered for debt decrease. 
-However, this has not been implemented for managePositionETH.
+However, this has not been implemented for `managePositionETH` of `PositionManagerStETH`.
 
 ```solidity 
 PositionManagerStETH.sol
@@ -164,7 +164,7 @@ managePositionStETH()
 
 
 ### Recommendation
-Consider adding this feature for `managePositionETH()` of PositionManagerStETH as well.
+Consider adding this feature for `managePositionETH()` of `PositionManagerStETH` as well.
 
 ### Review
 TBA
