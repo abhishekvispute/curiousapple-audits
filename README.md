@@ -1,5 +1,5 @@
 # curiousapple 🦇
-
+### Independent Security Researcher
 ---------------------------
 **Bridges, DEXs, Perps, Vaults, Lending Markets, Stablecoins, LSDs,** </br>
 **NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts....**</br>
