@@ -18,7 +18,7 @@
 
 ### [Raft Finance](https://raft.fi/)
 In their own words, "Raft is a governance-minimized, decentralized protocol that allows people to generate R (a USD stablecoin) by depositing capital-efficient collateral." </br>
-Previously, we reviewed the addition of the wrapped token collateral type for Raft in , and the Raft Team has once again engaged us to review the changes they have made to `OneStepLeverage` to support the same wrapped collateral token. 
+Previously, we reviewed the addition of the wrapped token collateral type for Raft in [Raft-1](https://github.com/abhishekvispute/curiousapple-audits/blob/fa510cc3771134845c8ffdfe4cb096d5742f10e6/src/Raft-1.md) , and the Raft Team has once again engaged us to review the changes they have made to `OneStepLeverage` to support the same wrapped collateral token. 
 Additionally, this review includes addition of two new AMM routers: `OneInchV5BalancerAMM` and `ParaSwapBalancerAMM`.
 
 
