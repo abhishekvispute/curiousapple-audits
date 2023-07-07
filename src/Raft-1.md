@@ -52,13 +52,13 @@ The following contracts were in scope:
 
 # Summary of Findings
 
-| ID     | Title                        | Severity      | Status |
-| ----------- | ---------------------------- | ------------- | ----- |
-| H-01 &nbsp;| `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | High |  Fixed |
-| Q-01 &nbsp;| SafeERC20 extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  | Quality |  Fixed  |
-| Q-02 &nbsp;| Check Effects Interaction pattern not followed for `managePositionETH()` | Quality | Fixed  |
-| Q-03 &nbsp;| Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH | Quality | Fixed  |
-| G-01 &nbsp;| Redundant check on `collateralToRedeem` | Gas |  Won't Do  |
+| ID     | Title                        | Status |
+| ----------- | ---------------------------- | ----- |
+| H-01 &nbsp;| `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | Fixed |
+| Q-01 &nbsp;| SafeERC20 extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  |  Fixed  |
+| Q-02 &nbsp;| Check Effects Interaction pattern not followed for `managePositionETH()` | Fixed  |
+| Q-03 &nbsp;| Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH | Fixed  |
+| G-01 &nbsp;| Redundant check on `collateralToRedeem` | Won't Do  |
 
 # Detailed Findings
 
@@ -98,7 +98,7 @@ https://github.com/raft-fi/contracts/pull/420
 https://github.com/raft-fi/contracts/pull/421
 https://github.com/raft-fi/contracts/pull/422
 
-Raft Team has added the limit solely on deposits, using a whitelist for the caller. This caller is intended to be one of Raft's other peripheral contracts, rather than standard user addresses. Further, they have blocked the transfer of wrapped tokens, unless the process is initiated by the position manager.
+Raft Team is enforcing limit solely on deposits with this fix and is using a whitelist for the caller. This caller is intended to be one of Raft's other peripheral contracts, rather than standard user addresses. Further, they have blocked the transfer of wrapped tokens, unless the process is initiated by the position manager.
 
 ## [Q-01] `SafeERC20` extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken` 
 [_underlyingCollateralToken.transferFrom(msg.sender, address(this), collateralChange);](https://github.com/raft-fi/contracts/blob/d5ca8febd9b7f33e1a3ad1eff1f2ae1d9dcd5b5f/contracts/PositionManagerWrappedCollateralToken.sol#L67-L68)
