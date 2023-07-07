@@ -4,9 +4,10 @@
         <td><img src="./logos/raft.png" width="410" height="250" /></td>
         <td> 
             <h1>Raft Finance</h1>
-            <h3>1. Changes To OneStepLeverage to support wrapped collateral token</h3> 
-            <h3>2. Addition of OneInchV5BalancerAMM </h3>
-            <h3>3. Addition of ParaSwapBalancerAMM</h3>
+            <p>1. Changes To OneStepLeverage to support wrapped collateral token</br>
+            2. Addition of OneInchV5BalancerAMM</br>
+            3. Addition of ParaSwapBalancerAMM
+            </p> 
             <p>Prepared by: curiousapple, Independent Security Researcher</p>
             <p>Duration: 1 day, July 7, 2023</p>
         </td>
@@ -49,7 +50,7 @@ The scope of the audit included
 
 ## [I-01] `R-DAI-WstETH` route being optimal may not always hold true
 
-The Raft Team has added `OneInchV5BalancerAMM` and `ParaSwapBalancerAMM`, enabling them to split the `R-WstETH` swap into two steps: one on the balancer `R-DAI` and one on `DAI-WstETH`. This manual division was necessary because aggregators failed to pick the `R-DAI` route from the Balancer pool for larger swaps. In this case, the Raft Team assumes the `R-DAI-WstETH` route is optimal in all cases. However, this assumption may not always remain true. For example, ParaSwap suggests MegaSwap's direct `R-WstETH` route for a swap of 1 million R.
+The Raft Team has added `OneInchV5BalancerAMM` and `ParaSwapBalancerAMM`, enabling them to split the `R-WstETH` swap into two steps: one on the balancer `R-DAI` and one on `DAI-WstETH`. This manual division was necessary because aggregators failed to pick the `R-DAI` route from the Balancer pool for larger swaps. In this case, the Raft Team assumes the `R-DAI-WstETH` route is optimal in all cases. However, this assumption may not always remain true. For example, ParaSwap suggests MegaSwap's direct `R-WstETH` route for a swap of 1 million R. </br>
 ![](./misc/image.png)
 
 ### Recommendation
@@ -70,10 +71,9 @@ BalancerAMM._executeSwap(
             
 ```
 
-
 ### Recommendation
-I understand that these contracts are not designed to hold any funds. However, I would suggest you proceed with caution and make users aware that they are not expected to send their funds directly to this contract. This is because similar issues with routers have occurred in the past.
-For example: 
+I understand that these contracts are not designed to hold any funds. However, I would suggest you proceed with caution and make users aware that they are not expected to send their funds directly to this contract. This is because similar issues with routers have occurred in the past.</br>
+For example:</br> 
 https://twitter.com/hexagate_/status/1671188024607100928
 
 ## [I-03] Ensure that no reentrancy is allowed for contracts being whitelisted for `depositForWithAccountCheck`
