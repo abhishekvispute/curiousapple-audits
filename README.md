@@ -44,7 +44,7 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 | Client               | Report     | Duration  |   
 |-------------         |--------    |---------- |
 | WeFi Finance         | TBA        | 1 week    |
-| Raft Update          | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Raft-Update.md)        | 0.5 week  |
+| Raft Update          | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Raft-1.md)        | 0.5 week  |
 
 ## Bug Bounties :santa:
 

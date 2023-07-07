@@ -6,7 +6,7 @@
             <h1>Raft Finance</h1>
             <h3>Updates to v1.0</h3>
             <p>Prepared by: curiousapple, Independent Security Researcher</p>
-            <p>Date: May 22 to May 23, 2023</p>
+            <p>Duration: 2 days, May 22 to May 23, 2023</p>
         </td>
     </tr>
 </table>
@@ -25,7 +25,7 @@ This audit includes the security review for these updates.</br>
 
 Abhishek Vispute, known online as 'curiousapple', is an independent smart contract security researcher. 
 Previously, he served as a lead smart contract auditor at [Macro](https://0xmacro.com/) and is currently working independently.</br>
-His auditing experience covers diverse set of protocols, including DeFi, NFTs, DAOs, and Games, in all of which he has discovered severe bugs. </br>
+His auditing experience covers diverse set of protocols, including DeFi, Bridges, NFTs, DAOs, and Games, in all of which he has discovered severe bugs. </br>
 You can find his previous work and contact [here](https://github.com/abhishekvispute/curiousapple-audits/blob/231caa00d7f0ba8b016b4980b300e6a2fcd93815/README.md) </br>
 
 
@@ -50,17 +50,15 @@ The following contracts were in scope:
 - SpiltLiquidationCollateral.sol
 - WrappedCollateralToken.sol
 
-After completion of the fixes, the `TBA` commit was reviewed.
-
 # Summary of Findings
 
-| ID     | Title                        | Severity      | Fixed |
+| ID     | Title                        | Severity      | Status |
 | ----------- | ---------------------------- | ------------- | ----- |
-| H-01 &nbsp;| `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | High |  ✓ |
-| Q-01 &nbsp;| SafeERC20 extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  | Quality |    |
-| Q-02 &nbsp;| Check Effects Interaction pattern not followed for `managePositionETH()` | Quality |    |
-| Q-03 &nbsp;| Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH | Quality |    |
-| G-01 &nbsp;| Redundant check on `collateralToRedeem` | Gas |    |
+| H-01 &nbsp;| `maxBalance` Creates Various Issues for All Protocol Actions, Potentially Leading to Denial of Service on Existing Borrower's Position | High |  Fixed |
+| Q-01 &nbsp;| SafeERC20 extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken`  | Quality |  Fixed  |
+| Q-02 &nbsp;| Check Effects Interaction pattern not followed for `managePositionETH()` | Quality | Fixed  |
+| Q-03 &nbsp;| Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of PositionManagerStETH | Quality | Fixed  |
+| G-01 &nbsp;| Redundant check on `collateralToRedeem` | Gas |  Won't Do  |
 
 # Detailed Findings
 
@@ -94,8 +92,13 @@ Liquidation bots are usually run by only a certain set of people with specific a
 ### Recommendation
 Consider skipping max balance check for all transfers from position manager.
 
-### Review
-TBA
+### Status
+Fixed By 
+https://github.com/raft-fi/contracts/pull/420
+https://github.com/raft-fi/contracts/pull/421
+https://github.com/raft-fi/contracts/pull/422
+
+Raft Team has added the limit solely on deposits, using a whitelist for the caller. This caller is intended to be one of Raft's other peripheral contracts, rather than standard user addresses. Further, they have blocked the transfer of wrapped tokens, unless the process is initiated by the position manager.
 
 ## [Q-01] `SafeERC20` extension not used for `_underlyingCollateralToken` inside `PositionManagerWrappedCollateralToken` 
 [_underlyingCollateralToken.transferFrom(msg.sender, address(this), collateralChange);](https://github.com/raft-fi/contracts/blob/d5ca8febd9b7f33e1a3ad1eff1f2ae1d9dcd5b5f/contracts/PositionManagerWrappedCollateralToken.sol#L67-L68)
@@ -105,7 +108,8 @@ TBA
 If you are planning to use tokens who return `boolean` instead of reverting as underlying, consider using `SafeERC20` extension.
 
 ### Review
-TBA
+Fixed by
+https://github.com/raft-fi/contracts/pull/424
 
 
 ## [Q-02] Check Effects Interaction pattern not followed for `managePositionETH()` of PositionManagerWETH
@@ -137,7 +141,8 @@ There is no incentive to renter here, since this contract is not designed to hol
 Consider doing `rToken` transfer before `ETH` transfer. 
 
 ### Review
-TBA
+Fixed by 
+https://github.com/raft-fi/contracts/pull/426
 
 
 ## [Q-03] Case of `debtChange == type(uint256).max` not accounted for in `managePositionETH()` of `PositionManagerStETH`
@@ -170,7 +175,8 @@ managePositionStETH()
 Consider adding this feature for `managePositionETH()` of `PositionManagerStETH` as well.
 
 ### Review
-TBA
+Fixed by
+https://github.com/raft-fi/contracts/pull/427
 
 ## [G-01] Redundant check on `collateralToRedeem`
 
@@ -195,8 +201,10 @@ If you consider chances of `lowTotalDebt.divDown(price)` equating to 0, nonexist
 `totalCollateral - collateralToRedeem == 0` check.
 
 ### Review
-TBA
+Won't Do
 
+Raft Team:
+"In our opinion, we shouldn't delete this, gas optimization is too small for this, and because of collateralInfo[collateralToken].splitLiquidation.LOW_TOTAL_DEBT(); which could be changed (or set to any value), this part lowTotalDebt.divDown(price) could be equal to zero (I completely agree that this will be very unlikely, but, as I wrote, on the other side, gas optimization is too small to remove this). And one more thing, this happens in function which is not called so usually"
 
 # Disclaimer 
 
