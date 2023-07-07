@@ -34,8 +34,8 @@ You can find his previous work and contact [here](https://github.com/abhishekvis
 
 The scope of the audit included 
 1. Changes made to OneStepLeverage contract by https://github.com/raft-fi/contracts/pull/430, https://github.com/raft-fi/contracts/pull/431</br>
-2. `OneInchV5BalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985`  
-3. `ParaSwapBalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985`  
+2. `OneInchV5BalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985` for https://github.com/raft-fi/contracts
+3. `ParaSwapBalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985` for https://github.com/raft-fi/contracts
 
 
 # Summary of Findings
@@ -60,7 +60,7 @@ Consider monitoring all liquidity resources to be sure of best optimal route.
 
 Both `OneInchV5BalancerAMM` and `ParaSwapBalancerAMM` allow anyone to withdraw the dormant funds from the contract using the balanceOf of the intermediary token.
 
-```
+```solidity
 OneInchV5BalancerAMM.sol
 L30
 
