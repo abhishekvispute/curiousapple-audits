@@ -34,9 +34,8 @@ You can find his previous work and contact [here](https://github.com/abhishekvis
 
 The scope of the audit included 
 1. Changes made to OneStepLeverage contract by https://github.com/raft-fi/contracts/pull/430, https://github.com/raft-fi/contracts/pull/431</br>
-2. `OneInchV5BalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985` for https://github.com/raft-fi/contracts
-3. `ParaSwapBalancerAMM` at commit `75ca5cda2dcfc94e28cfb953205b847520270985` for https://github.com/raft-fi/contracts
-
+2. `OneInchV5BalancerAMM` at commit [`75ca5cda2dcfc94e28cfb953205b847520270985`](https://github.com/raft-fi/contracts/tree/75ca5cda2dcfc94e28cfb953205b847520270985) 
+3. `ParaSwapBalancerAMM` at commit [`75ca5cda2dcfc94e28cfb953205b847520270985`](https://github.com/raft-fi/contracts/tree/75ca5cda2dcfc94e28cfb953205b847520270985) 
 
 # Summary of Findings
 
