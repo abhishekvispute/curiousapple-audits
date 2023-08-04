@@ -5,7 +5,8 @@
 **NFT Market Places, NFT Drops, DAOs, Social, Games, Smart Accounts....**</br>
 Have audited all !!! &nbsp; :earth_asia: :earth_africa: :earth_americas: </br>
 If your protocol does not belong there, bring it on ! will take it as challenge :smile: </br>
-Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br>
+Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br></br>
+![image](https://github.com/abhishekvispute/curiousapple-audits/assets/46760063/264adf72-a41c-4ecd-a9bc-0829a73187ce)
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
@@ -55,6 +56,7 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 Anyone could grief staking rewards contract by donating a small amount of reward tokens to the vault, since the reward calculation included `xyz - rewardToken.balanceOf(address(this))`.
 
 3. Will reveal soon (Medium)
+
 
 ## Credits 
 1. [Macro](https://github.com/zobront/audits/blob/main/template.md) library for public audit reports. 
