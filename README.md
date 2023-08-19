@@ -6,7 +6,6 @@
 Have audited all !!! &nbsp; :earth_asia: :earth_africa: :earth_americas: </br>
 If your protocol does not belong there, bring it on ! will take it as challenge :smile: </br>
 Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br></br>
-![image](https://github.com/abhishekvispute/curiousapple-audits/assets/46760063/264adf72-a41c-4ecd-a9bc-0829a73187ce)
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
 
