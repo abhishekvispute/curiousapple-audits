@@ -8,8 +8,7 @@ If your protocol does not belong there, bring it on ! will take it as challenge 
 Ping me at `curiousapple` on telegram or discord to take it forward :airplane: </br></br>
 
 ##  Previosuly as [Macro's](https://0xmacro.com/) Auditor 
-
-**Total Audit Weeks:** `40`  
+ 
 Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo) 
 
 | Client      | Report                                                                                       | Position            | Duration |
@@ -28,6 +27,7 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 | Makerdao    | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Maker.pdf)       | Associate           | 1 week   |
 | Synthetix   | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Synthetix.pdf)   | Associate           | 1 week   |
 | Hop         | Private                                                                                      | Associate           | 0.5 week |
+| xDonations  | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/xDonations.pdf)  | Associate           | 0.5 week |
 | Thirdweb    | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/thirdweb.pdf)    | Associate + Point   | 2 weeks  |
 | Frax TWAMM  | Private                                                                                      | Apprentice          | 2 weeks  |
 | Wristables  | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Wristables.pdf)  | Apprentice          | 1 week   |
@@ -49,10 +49,9 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 
 ## Bug Bounties :santa:
 
-1. Will reveal soon (High)
+1. Will reveal soon (High) 
    
-2. [Spiral DAO (Medium)](https://spiral.farm/) </br>
-Anyone could grief staking rewards contract by donating a small amount of reward tokens to the vault, since the reward calculation included `xyz - rewardToken.balanceOf(address(this))`.
+2. [Spiral DAO (Medium)](https://spiral.farm/) : https://gist.github.com/abhishekvispute/5b48f9d8072b15cd5b0c5371398df0f3
 
 3. Will reveal soon (Medium)
 
