@@ -51,13 +51,11 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 
 ## Bug Bounties :santa:
 
-1. Will reveal soon (High) 
-   
-2. [Spiral DAO (Medium)](https://spiral.farm/) : https://gist.github.com/abhishekvispute/5b48f9d8072b15cd5b0c5371398df0f3
+1. High - Will reveal soon
+2. Medium - [Spiral DAO](https://spiral.farm/) : [Report](https://gist.github.com/abhishekvispute/5b48f9d8072b15cd5b0c5371398df0f3)
+3. Medium - Will reveal soon
 
-3. Will reveal soon (Medium)
-
-
-## Credits 
-1. [Macro](https://github.com/zobront/audits/blob/main/template.md) library for public audit reports. 
-2. [zobront](https://github.com/zobront/audits/blob/main/template.md) for audit report template.
+## Publications 📑:
+1. https://0xmacro.com/blog/how-to-consume-chainlink-price-feeds-safely/
+2. https://0xmacro.com/blog/solidity-gas-optimizations-cheat-sheet/
+3. https://0xmacro.com/blog/synthetix-staking-rewards-issue-inefficient-reward-distribution/
