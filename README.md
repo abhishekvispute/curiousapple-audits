@@ -48,6 +48,7 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 | Raft-2          | [Open](https://github.com/abhishekvispute/curiousapple-audits/blob/main/src/Raft-2.md)        | 1 day  |
 | Raft-3          | [Open](https://gist.github.com/abhishekvispute/9537546b308ce08fdc20090c05b0f7d4)              | 1 day  |
 | Raft-4          | [Open](https://gist.github.com/abhishekvispute/d5777b11dc6c109dcb207150e8bb3b56)              | 2 days | 
+| Raft-5          | [Open](https://gist.github.com/abhishekvispute/d2d332af1edac19a6e856d309dc440c1)              | 3 days | 
 
 ## Bug Bounties :santa:
 
