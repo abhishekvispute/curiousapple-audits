@@ -52,10 +52,14 @@ Apprentice (2 mo) > Associate (7 mo) > Lead (3 mo)
 
 ## Bug Bounties :santa:
 
-1. Critical - Will reveal soon 
-2. High - Will reveal soon
-3. Medium - [Spiral DAO](https://spiral.farm/) : [Report](https://gist.github.com/abhishekvispute/5b48f9d8072b15cd5b0c5371398df0f3)
-4. Medium - Will reveal soon
+1. Critical - Will reveal soon (1 month)
+2. Critical - Just resolved, will take some for disclosure
+3. High - Will reveal soon (1 month)
+4. High - Just resolved, will take some for disclosure
+5. Medium - Just resolved, will take some for disclosure
+6. Medium - [Spiral DAO](https://spiral.farm/) : [Report](https://gist.github.com/abhishekvispute/5b48f9d8072b15cd5b0c5371398df0f3)
+7. Medium - Will reveal soon (1 month)
+8. Low 
 
 ## Publications 📑:
 1. https://0xmacro.com/blog/how-to-consume-chainlink-price-feeds-safely/
